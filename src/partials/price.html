@@ -11,17 +11,18 @@
     <section class="price">
         <div class="container">
             <h2 class="price__title2">BOSE NC 700</h2>
-            <ul class="price__box">   
+            <ul class="price__box">
                 <li class="price__item">
                     <h2 class="price__title">BOSE NC 700</h2>
                     <button class="price__color-button" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 70 70" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" fill="none">
                             <circle cx="35" cy="35" r="35" fill="#1D1D1D" />
                             <circle cx="35" cy="35" r="34.5" stroke="white" stroke-opacity="0.8" />
                             <circle cx="35" cy="35" r="26" fill="black" stroke="#DF3D3A" stroke-width="2" />
                         </svg>
                     </button>
-                    <button class="price__color-button" type="button"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 70 70" fill="none">
+                    <button class="price__color-button" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 70 70" fill="none">
                             <circle cx="35" cy="35" r="35" fill="white" fill-opacity="0.8" />
                             <circle cx="35" cy="35" r="34.5" stroke="white" stroke-opacity="0.8" />
                             <circle cx="35" cy="35" r="27" fill="white" fill-opacity="0.8" />
@@ -56,7 +57,18 @@
                     <button class="price__button" type="button">ORDER</button>
                 </li>
                 <li class="price__item">
-                    <img class="price__image" src="./image/desctop/blackprice-desctop@1x.webp" alt="Black Headphones for sale" />
+                    <picture>
+                        <source
+                            srcset="./image/desctop/blackprice-desctop@1x.webp 1x, ./image/desctop/blackprice-desctop@2x.webp 2x"
+                            type="image/webp" media=" (min-width: 1200px)" />
+                        <source
+                            srcset="./image/tablet/blackprice-tablet@1x.webp 1x, ./image/tablet/blackprice-tablet@2x.webp 2x"
+                            type="image/webp" media=" (min-width: 768px)" />
+                        <source
+                            srcset="./image/mobile/blackprice-phone1x.webp.webp 1x, ./image/mobile/blackprice-phone2x.webp.webp 2x"
+                            type="image/webp" media=" (min-width: 320px)" />
+                        <img class="price__image" src="./image/desctop/blackprice-desctop@1x.webp" />
+                    </picture>
                 </li>
             </ul>
         </div>

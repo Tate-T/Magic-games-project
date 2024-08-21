@@ -37,6 +37,7 @@
   }
 
   &__link {
+    display: flex;
     font-family: "Gilroy-Regular";
     text-decoration: none;
     color: $description-color;
