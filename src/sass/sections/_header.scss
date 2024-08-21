@@ -1,0 +1,25 @@
+.header {
+    padding-top: 66px;
+    padding-bottom: 74px;
+
+&__box {
+    display: flex;
+    justify-content: space-between;
+}
+&__svg {
+    fill: $title-color
+}
+
+&__title {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 77px;
+}
+
+&__link {
+    text-decoration: none;
+    color: $description-color;
+}
+
+}
