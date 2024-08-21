@@ -1,0 +1,23 @@
+body {
+  background: #191919;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  padding: 0 10px;
+  width: 290px;
+  margin: 0 auto;
+  outline: 1px solid red;
+
+  @media screen and (min-width: 768px) {
+    width: 678px;
+    padding: 0 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1300px;
+    padding: 0 20px;
+  }
+}
