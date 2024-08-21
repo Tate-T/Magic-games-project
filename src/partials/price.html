@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
+
 <body>
-    <section>
+    <section class="price">
         <div class="container">
-            <h2>BOSE NC 700</h2>
-            <button type="button"></button>
-            <button type="button"></button>
-            <h3>Availability in stores</h3>
-            <h3>Characteristics</h3>
-            <h3>Payment and delivery methods</h3>
-            <h2>14 999 UAH</h2>
-            <button type="button">ORDER</button>
-            <img src="./image/desctop/blackprice-desctop@1x.webp" alt="Black Headphones for sale">
+            <ul class="price__box">
+                <li class="price__item">
+                    <h2 class="price__title">BOSE NC 700</h2>
+                    <button class="price__color-button" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                            <circle cx="35" cy="35" r="35" fill="#1D1D1D" />
+                            <circle cx="35" cy="35" r="34.5" stroke="white" stroke-opacity="0.8" />
+                            <circle cx="35" cy="35" r="26" fill="black" stroke="#DF3D3A" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <button class="price__color-button" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="70"
+                            height="70" viewBox="0 0 70 70" fill="none">
+                            <circle cx="35" cy="35" r="35" fill="white" fill-opacity="0.8" />
+                            <circle cx="35" cy="35" r="34.5" stroke="white" stroke-opacity="0.8" />
+                            <circle cx="35" cy="35" r="27" fill="white" fill-opacity="0.8" />
+                        </svg></button>
+                    <ul class="price__list">
+                        <li class="price__faq">
+                            <h3 class="price__text">Availability in stores</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 23"
+                                fill="none">
+                                <path d="M1 21.4062L21 1.40625M21 1.40625L1 1.40625M21 1.40625L21 21.4062"
+                                    stroke="#DF3D3A" stroke-width="2" />
+                            </svg>
+                        </li>
+                        <li class="price__faq">
+                            <h3 class="price__text">Characteristics</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 23"
+                                fill="none">
+                                <path d="M1 21.4062L21 1.40625M21 1.40625L1 1.40625M21 1.40625L21 21.4062"
+                                    stroke="#DF3D3A" stroke-width="2" />
+                            </svg>
+                        </li>
+                        <li class="price__faq">
+                            <h3 class="price__text">Payment and delivery methods</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 23"
+                                fill="none">
+                                <path d="M1 21.4062L21 1.40625M21 1.40625L1 1.40625M21 1.40625L21 21.4062"
+                                    stroke="#DF3D3A" stroke-width="2" />
+                            </svg>
+                        </li>
+                    </ul>
+                    <h2 class="price__price">14 999 UAH</h2>
+                    <button class="price__button" type="button">ORDER</button>
+                </li>
+                <li class="price__item">
+                    <img class="price__image" src="./image/desctop/blackprice-desctop@1x.webp" alt="Black Headphones for sale" />
+                </li>
+            </ul>
         </div>
     </section>
 </body>
+
 </html>
