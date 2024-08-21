@@ -10,9 +10,10 @@
 <body>
     <header class="header">
         <div class="container header__box">
-            <svg width="130" height="15.24" class="header__svg">
-                <use href="./image/desctop/symbol-defs.svg#icon-bose-logo-2"></use>
-            </svg>
+            <a class="header__link" href="./index.html">
+                <svg class="header__svg">
+                    <use href="./image/desctop/symbol-defs.svg#icon-bose-logo-2"></use>
+                </svg></a>
             <ul class="header__list">
                 <li class="header__item">
                     <a class="header__link" href="#">Characteristics</a>
@@ -27,6 +28,11 @@
                     <a class="header__link" href="#">Payment and delivery</a>
                 </li>
             </ul>
+            <button burger-modal-open class="header__button">
+                <svg class="header__burger">
+                    <use href="./image/desctop/symbol-defs.svg#icon-hamburger"></use>
+                </svg>
+            </button>
         </div>
     </header>
 </body>

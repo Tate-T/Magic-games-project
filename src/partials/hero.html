@@ -20,8 +20,15 @@
                     </div>
                 </li>
                 <li class="hero__item">
-                    <img class="hero__image" src="./image/desctop/blackheadphones-desctop@1x.webp"
-                        alt="Black Headphones">
+                    <picture>
+                        <source srcset="./image/desctop/blackheadphones-desctop@1x.webp 1x, ./image/desctop/blackheadphones-desctop@2x.webp 2x"
+                          type="image/webp" media=" (min-width: 1200px)" />
+                        <source srcset="./image/tablet/blackheadphones-tablet@1x.webp 1x, ./image/tablet/blackheadphones-tablet@2x.webp 2x"
+                          type="image/webp" media=" (min-width: 768px)" />
+                        <source srcset="./image/mobile/blackheadphones-phone1x.webp.webp 1x, ./image/mobile/blackheadphones-phone2x.webp.webp 2x"
+                          type="image/webp" media=" (min-width: 320px)" />
+                        <img class="hero__image" src="./image/desctop/blackheadphones-desctop@1x.webp" />
+                      </picture>
                 </li>
             </ul>
         </div>

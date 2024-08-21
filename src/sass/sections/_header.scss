@@ -1,26 +1,61 @@
 .header {
-    padding-top: 66px;
-    padding-bottom: 74px;
+  padding-top: 66px;
+  padding-bottom: 74px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 50.49px;
+    padding-bottom: 51.51px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 17px;
+    padding-bottom: 32px;
+  }
 
-&__box {
+
+  &__box {
     display: flex;
     justify-content: space-between;
-}
-&__svg {
-    fill: $title-color
-}
+    align-items: center;
+  }
+  &__svg {
+    fill: $title-color;
+    width: 130px;
+    height: 15.24px;
+    @media screen and (max-width: 1199px) {
+      width: 100px;
+      height: 12px;
+    }
+  }
 
-&__list {
+  &__list {
     display: flex;
     align-items: center;
     justify-content: end;
     gap: 77px;
-}
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
 
-&__link {
+  &__link {
+    display: flex;
     font-family: "Gilroy-Regular";
     text-decoration: none;
     color: $description-color;
-}
+  }
 
+  &__burger {
+    fill: $description-color;
+    width: 22px;
+    height: 11.665px;
+  }
+
+  &__button {
+    border: none;
+    margin-left: auto;
+    background: none;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
 }

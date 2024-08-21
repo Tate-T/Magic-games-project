@@ -1,13 +1,39 @@
 .price {
-padding: 196px 0 171px 0;
-
+  padding: 196px 0 171px 0;
+  @media screen and (max-width: 1199px) {
+    padding: 100px 0 100px 0;
+  }
 
   &__box {
     display: flex;
+    @media screen and (max-width: 1199px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__item:last-child {
     margin-left: 150px;
+    @media screen and (max-width: 1199px) {
+      margin-left: 0;
+    }
+  }
+
+  &__title2 {
+    color: #e7e7e7;
+    font-family: "Gilroy-Medium";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 64.8px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+    }
   }
 
   &__title {
@@ -19,6 +45,9 @@ padding: 196px 0 171px 0;
     line-height: 120%; /* 64.8px */
     letter-spacing: 1.08px;
     text-transform: uppercase;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
 
   &__list {
@@ -29,6 +58,19 @@ padding: 196px 0 171px 0;
   &__color-button {
     margin: 50px 0;
     background-color: transparent;
+    width: 70px;
+    height: 70px;
+    @media screen and (max-width: 1199px) {
+      margin: 32px 0 40px 0;
+      width: 58px;
+      height: 58px;
+    }
+    @media screen and (max-width: 767px) {
+      margin: 32px 24px 32px 0;
+      width: 44px;
+height: 44px;
+padding: 0;
+    }
   }
 
   &__faq {
@@ -39,12 +81,27 @@ padding: 196px 0 171px 0;
     width: 400px;
     display: flex;
     gap: 109.25px;
+    @media screen and (max-width: 1199px) {
+      width: 618px;
+      gap: 347.25px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 270px;
+      gap: 0.59px;
+    }
   }
 
   &__faq:last-child {
     border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
     width: 400px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
+    @media screen and (max-width: 1199px) {
+      width: 618px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 270px;
+      margin-bottom: 32px;
+    }
   }
 
   &__text {
@@ -71,6 +128,13 @@ padding: 196px 0 171px 0;
     letter-spacing: 1.08px;
     text-transform: uppercase;
     margin-bottom: 32px;
+    @media screen and (max-width: 1199px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
   }
 
   &__button {
@@ -85,9 +149,30 @@ padding: 196px 0 171px 0;
     line-height: normal;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+    @media screen and (max-width: 1199px) {
+      width: 294px;
+      height: 58px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      width: 270px;
+    }
+  }
+
+  &__item:last-child {
+    display: flex;
+    justify-content: center;
+    background-color: $bg-image-color;
   }
 
   &__image {
     max-width: 700px;
+    @media screen and (max-width: 1199px) {
+      height: 446px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 270px;
+      height: 265px;
+    }
   }
 }
