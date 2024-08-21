@@ -1,0 +1,93 @@
+.price {
+padding: 196px 0 171px 0;
+
+
+  &__box {
+    display: flex;
+  }
+
+  &__item:last-child {
+    margin-left: 150px;
+  }
+
+  &__title {
+    color: #e7e7e7;
+    font-family: "Gilroy-Medium";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 64.8px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__color-button {
+    margin: 50px 0;
+    background-color: transparent;
+  }
+
+  &__faq {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    border-top: 1px rgba(255, 255, 255, 0.1) solid;
+    width: 400px;
+    display: flex;
+    gap: 109.25px;
+  }
+
+  &__faq:last-child {
+    border-bottom: 1px rgba(255, 255, 255, 0.1) solid;
+    width: 400px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    width: 270.75px;
+    color: $description-color;
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 20px */
+  }
+
+  &__svg {
+    fill: $bg-button-color;
+  }
+
+  &__price {
+    color: #df3d3a;
+    font-family: "Gilroy-Medium";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 64.8px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    width: 400px;
+    height: 68px;
+    background: $bg-button-color;
+    color: $button-text-color;
+    font-family: "Gilroy-Medium";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  &__image {
+    max-width: 700px;
+  }
+}

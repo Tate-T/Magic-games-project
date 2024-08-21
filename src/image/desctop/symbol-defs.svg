@@ -9,6 +9,26 @@
 <symbol id="icon-Vector-157" viewBox="0 0 31 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.7826" d="M1.391 29.783l27.826-27.826M29.217 1.957h-27.826M29.217 1.957v27.826"></path>
 </symbol>
+<symbol id="icon-Property-1Variant2-1" viewBox="0 0 32 32">
+<path fill="#1d1d1d" style="fill: var(--color1, #1d1d1d)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4571" d="M31.771 16c0 8.71-7.061 15.771-15.771 15.771s-15.771-7.061-15.771-15.771c0-8.71 7.061-15.771 15.771-15.771s15.771 7.061 15.771 15.771z"></path>
+<path fill="#000" style="fill: var(--color3, #000); stroke: var(--color4, #df3d3a)" stroke="#df3d3a" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9143" d="M27.886 16c0 6.564-5.321 11.886-11.886 11.886s-11.886-5.321-11.886-11.886c0-6.564 5.321-11.886 11.886-11.886s11.886 5.321 11.886 11.886z"></path>
+</symbol>
+<symbol id="icon-Property-1Variant2" viewBox="0 0 32 32">
+<path fill="#cfcfcf" style="fill: var(--color5, #cfcfcf)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4571" d="M31.771 16c0 8.71-7.061 15.771-15.771 15.771s-15.771-7.061-15.771-15.771c0-8.71 7.061-15.771 15.771-15.771s15.771 7.061 15.771 15.771z"></path>
+<path fill="#fcfcfc" style="fill: var(--color6, #fcfcfc); stroke: var(--color4, #df3d3a)" stroke="#df3d3a" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9143" d="M27.886 16c0 6.564-5.321 11.886-11.886 11.886s-11.886-5.321-11.886-11.886c0-6.564 5.321-11.886 11.886-11.886s11.886 5.321 11.886 11.886z"></path>
+</symbol>
+<symbol id="icon-Property-1Default-1" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color2, #fff)" opacity="0.8" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4571" d="M31.771 16c0 8.71-7.061 15.771-15.771 15.771s-15.771-7.061-15.771-15.771c0-8.71 7.061-15.771 15.771-15.771s15.771 7.061 15.771 15.771z"></path>
+<path fill="#fff" style="fill: var(--color2, #fff)" opacity="0.8" d="M28.343 16c0 6.817-5.526 12.343-12.343 12.343s-12.343-5.526-12.343-12.343c0-6.817 5.526-12.343 12.343-12.343s12.343 5.526 12.343 12.343z"></path>
+</symbol>
+<symbol id="icon-Property-1Default" viewBox="0 0 32 32">
+<path fill="#1d1d1d" style="fill: var(--color1, #1d1d1d)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4571" d="M31.771 16c0 8.71-7.061 15.771-15.771 15.771s-15.771-7.061-15.771-15.771c0-8.71 7.061-15.771 15.771-15.771s15.771 7.061 15.771 15.771z"></path>
+<path fill="#000" style="fill: var(--color3, #000)" d="M28.343 16c0 6.817-5.526 12.343-12.343 12.343s-12.343-5.526-12.343-12.343c0-6.817 5.526-12.343 12.343-12.343s12.343 5.526 12.343 12.343z"></path>
+</symbol>
 <symbol id="icon-youtube" viewBox="0 0 32 32">
 <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 <path d="M20.845 15.887l-7.099 4.098v-8.197l7.099 4.098z"></path>
