@@ -1,0 +1,113 @@
+.guarantees {
+
+    &__box {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__box2 {
+        border: 0px;
+        width: 280px;
+        height: 356px;
+        display: flex;
+        align-items: flex-start;
+
+        @media screen and (min-width: 768px) {
+            width: 294px;
+            height: 425px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 405px;
+            height: 593px;
+        }
+
+    }
+
+    &__img {
+        width: 280px;
+        height: 268px;
+        
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 442px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 590px;
+            height: 565px;
+        }
+
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $title-color;
+        font-family: "Gilroy-regular";
+
+        @media screen and (min-width: 768px) {
+            font-size: 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 54px;
+        }
+    }
+
+    &__title2 {
+        font-size: 20px;
+        font-weight: 500;
+        color: $title-color;
+        font-family: "Gilroy-regular";
+
+        @media screen and (min-width: 768px) {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 28px;
+        }
+
+        
+    }
+
+    &__icon {
+        fill: $bg-button-color;
+        width: 13px;
+        height: 13px;
+        margin-top: 65px;
+        margin-bottom: 23px;
+
+        @media screen and (min-width: 768px) {
+            width: 13px;
+        height: 13px;
+        margin-top: 50px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 13px;
+        height: 13px;
+        margin-top: 25px;
+        }
+    }
+
+    &__txt {
+        font-size: 14px;
+        font-weight: 100;
+        color: $description-color;
+        font-family: "Gilroy-regular";
+        margin-top: 15px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+            margin-top: 18px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    }
+}

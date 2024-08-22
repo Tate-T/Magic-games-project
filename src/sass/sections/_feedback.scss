@@ -1,0 +1,100 @@
+.feedback {
+
+    &__box1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__box2 {
+        width: 400px;
+        height: 185px;
+    }
+
+    &__title {
+        font-size: 54px;
+        font-weight: bold;
+        color: $title-color;
+        font-family: "Gilroy-regular";
+        margin-bottom: 50px;
+    }
+
+    &__txt {
+        font-size: 28px;
+        font-weight: bold;
+        color: $title-color;
+        font-family: "Gilroy-regular";
+    }
+
+      display: flex;
+      flex-direction: column;
+      width: 510px;
+      margin: auto;
+      padding: 20px;
+      color: #fff;
+  
+      label {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+  
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: transparent;
+        border-bottom: 1px solid $description-color;
+        border-right: 1px solid rgba(0, 0, 0, 0);     
+        border-top: 1px solid rgba(0, 0, 0, 0); 
+        border-left: 1px solid rgba(0, 0, 0, 0); 
+        color: #fff;
+      }
+  
+      textarea {
+        height: 100px;
+      }
+  
+      &__checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        
+  
+        input[type="checkbox"] {
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+          background-color: transparent;
+          border: 1px solid rgba(0, 0, 0, 0);
+        }
+  
+        label {
+          font-size: 14px;
+  
+          a {
+            color: #fff;
+            text-decoration: underline;
+          }
+        }
+      }
+  
+      button {
+        margin-top: 90px;
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #ff0000;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase;
+        width: 510px;
+        height: 68px;
+  
+        &:hover {
+          background-color: rgba(255, 0, 0, 0.2);
+        }
+      }
+    
+    }
+  
