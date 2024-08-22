@@ -1,0 +1,53 @@
+.design {
+padding-bottom: 170px;
+
+  &__title {
+    color: $title-color;
+    font-family: "Gilroy-regular";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 64.8px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: $title-color;
+    font-family: "Gilroy-regular";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 35px */
+  }
+
+  &__description {
+    color: $description-color;
+    font-family: "Gilroy-regular";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 29px */
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &__box {
+    display: flex;
+  }
+  &__subbox {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 150px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
