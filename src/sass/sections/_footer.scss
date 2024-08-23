@@ -1,0 +1,35 @@
+.footer {
+  padding-top: 170px;
+  padding-bottom: 70px;
+
+  &__list {
+    display: flex;
+    gap: 50px;
+    margin-right: 267px;
+  }
+
+  &__navigation {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__link {
+    color: $footer-form-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+  }
+
+  &__number {
+    color: $description-color;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 12px;
+    transition: 700ms cubic-bezier(0.38, 0, 0.22, 1);
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
