@@ -1,42 +1,90 @@
 .bose {
-  padding-bottom: 170px;
+  padding-bottom: 52px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 170px;
+  }
 
   &__title {
     color: $title-color;
     font-family: "Gilroy-regular";
-    font-size: 54px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 64.8px */
-    letter-spacing: 1.08px;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: 0.48px;
     text-transform: uppercase;
-    padding-bottom: 50px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+      letter-spacing: 0.6px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 54px;
+      letter-spacing: 1.08px;
+      padding-bottom: 50px;
+    }
   }
 
   &__subtitle {
     color: $title-color;
     font-family: "Gilroy-regular";
-    font-size: 28px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 125%; /* 35px */
-    padding-bottom: 20px;
+    line-height: 125%; /* 25px */
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+      padding-bottom: 20px;
+    }
   }
   &__description {
     color: $description-color;
     font-family: "Gilroy-regular";
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 145%; /* 29px */
+    line-height: 125%; /* 17.5px */
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 145%; /* 23.2px */
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+    }
   }
 
   &__box2 {
-    width: 380px;
+    width: 280px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      width: 470px;
+      padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 380px;
+    }
   }
 
   &__box1 {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 60px;
+    }
   }
 }
