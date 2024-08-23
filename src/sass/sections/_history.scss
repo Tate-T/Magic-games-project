@@ -1,0 +1,46 @@
+.history {
+  padding-top: 170px;
+  padding-bottom: 170px;
+
+  &__title {
+    color: $title-color;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: $description-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 145%;
+  }
+
+  &__paragraph {
+    color: $description-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 145%;
+  }
+
+  &__subtitle {
+    color: $title-color;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 125%;
+  }
+
+  &__svg {
+    fill: $bg-button-color;
+    width: 34px;
+    height: 25px;
+  }
+
+  &__description {
+    color: $boss-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 70%;
+  }
+}
