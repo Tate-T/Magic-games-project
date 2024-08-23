@@ -1,8 +1,39 @@
 .feedback {
 
+    &__box {
+      padding-top: 16px;
+        padding-bottom: 16px;
+      
+        @media screen and (min-width:  768px) {
+          padding-top: 100px;
+          padding-bottom: 100px;
+
+          
+        }
+
+        @media screen and (min-width:  1200px) {
+          padding-top: 170px;
+          padding-bottom: 170px;
+
+          
+        }
+    }
+
+
     &__box1 {
-        display: flex;
-        justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+      
+
+      @media screen and (min-width: 768px) {
+          justify-content: space-around;
+          flex-direction: column;
+              }
+
+      @media screen and (min-width: 1200px) {
+          justify-content: space-around;
+         flex-direction: row;
+      }
     }
 
     &__box2 {
@@ -10,27 +41,54 @@
         height: 185px;
     }
 
+    &__box3 {
+      width: 262px;
+      height: auto;
+
+      @media screen and (min-width: 768px) {
+        width: 648px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 510px;
+      }
+    }
+
     &__title {
-        font-size: 54px;
+        font-size: 24px;
         font-weight: bold;
         color: $title-color;
         font-family: "Gilroy-regular";
-        margin-bottom: 50px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: 768px) {
+          font-size: 30px;
+          margin-bottom: 32px;
+        }
+  
+        @media screen and (min-width: 1200px) {
+          font-size: 54px;
+          margin-bottom: 50px;
+        }
     }
 
     &__txt {
-        font-size: 28px;
+        font-size: 16px;
         font-weight: bold;
         color: $title-color;
         font-family: "Gilroy-regular";
-    }
+        border: 0px;
+        width: 281px;
 
-      display: flex;
-      flex-direction: column;
-      width: 510px;
-      margin: auto;
-      padding: 20px;
-      color: #fff;
+        
+        @media screen and (min-width: 768px) {
+          font-size: 20px;
+        }
+  
+        @media screen and (min-width: 1200px) {
+          font-size: 28px;
+        }
+    }
   
       label {
         margin-bottom: 5px;
@@ -88,8 +146,16 @@
         cursor: pointer;
         font-size: 16px;
         text-transform: uppercase;
-        width: 510px;
-        height: 68px;
+        width: 262px;
+        height: 58px;
+  
+        @media screen and (min-width: 768px) {
+          width: 648px;
+        }
+  
+        @media screen and (min-width: 1200px) {
+          width: 510px;
+        }
   
         &:hover {
           background-color: rgba(255, 0, 0, 0.2);
@@ -98,3 +164,4 @@
     
     }
   
+
