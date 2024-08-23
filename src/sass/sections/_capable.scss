@@ -33,6 +33,16 @@
     display: flex;
     margin-top: 50px;
     gap: 220px;
+    
+    @media screen and (min-width:768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+     @media screen and (min-width:1200px) {
+      flex-direction: row;
+      gap: 220px;
+    }
   }
 
   &__list {
