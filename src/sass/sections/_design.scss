@@ -1,12 +1,12 @@
 .design {
   padding-bottom: 52px;
 
-  @media screen and (min-width:768px) {
-     padding-bottom: 170px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 170px;
   }
 
-   @media screen and (min-width:1200px) {
-     padding-bottom: 128px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 128px;
   }
 
   &__title {
@@ -115,12 +115,13 @@
 
     @media screen and (min-width: 768px) {
       padding-top: 0;
-      width: 354px;
+      width: 1940px;
     }
 
     @media screen and (min-width: 1200px) {
       padding-top: 0;
-      width: 590px;
+      width: 2030px;
     }
   }
+
 }
