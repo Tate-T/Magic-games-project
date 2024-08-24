@@ -1,22 +1,49 @@
 <section id="bose" class="bose">
   <div class="container">
     <div class="bose__box1">
-    <div class="bose__box2">
-      <h2 class="bose__title">Bose AR</h2>
-      <h3 class="bose__subtitle">Brand name technology</h3>
-      <p class="bose__description">
-        Bose AR is a unique audio platform augmented reality, that opens before
-        you new facets of sound. It allows you to stay connected to the real
-        world and immerse yourself in the virtual universe at the same time.
-      </p>
-    </div>
-    <div class="bose__imgbox">
-      <img
-        class="bose__img"
-        src="./image/desctop/bosewomen-desctop@1x.webp"
-        alt="bosewomen"
-      />
-    </div>
+      <div class="bose__box2">
+        <h2 class="bose__title">Bose AR</h2>
+        <h3 class="bose__subtitle">Brand name technology</h3>
+        <p class="bose__description">
+          Bose AR is a unique audio platform augmented reality, that opens
+          before you new facets of sound. It allows you to stay connected to the
+          real world and immerse yourself in the virtual universe at the same
+          time.
+        </p>
+      </div>
+      <div class="bose__imgbox">
+        <picture>
+          <source
+            srcset="
+              ./image/desctop/bosewomen-desctop@1x.webp 1x,
+              ./image/desctop/bosewomen-desctop@2x.webp 2x
+            "
+            type="image/webp"
+            media=" (min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./image/tablet/bosewomen-tablet@1x.webp 1x,
+              ./image/tablet/bosewomen-tablet@2x.webp 2x
+            "
+            type="image/webp"
+            media=" (min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./image/mobile/bosewomen-phone1x.webp 1x,
+              ./image/mobile/bosewomen-phone2x.webp 2x
+            "
+            type="image/webp"
+            media=" (min-width: 320px)"
+          />
+          <img
+            class="bose__img"
+            src="./image/desctop/bosewomen-desctop@1x.webp"
+            alt="bosewomen"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>

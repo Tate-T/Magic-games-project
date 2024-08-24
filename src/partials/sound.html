@@ -1,11 +1,37 @@
 <section id="sound" class="sound">
   <div class="container">
     <h2 class="sound__title">The luxury of silence</h2>
-    <img
-      class="sound__img"
-      src="./image/desctop/sunshine-desctop@1x.webp"
-      alt="sunshine"
-    />
+    <picture>
+      <source
+        srcset="
+          ./image/desctop/sunshine-desctop@1x.webp 1x,
+          ./image/desctop/sunshine-desctop@2x.webp 2x
+        "
+        type="image/webp"
+        media=" (min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./image/tablet/sunshine-tablet@1x.webp 1x,
+          ./image/tablet/sunshine-tablet@2x.webp 2x
+        "
+        type="image/webp"
+        media=" (min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./image/mobile/sunshine-phone1x.webp 1x,
+          ./image/mobile/sunshine-phone2x.webp 2x
+        "
+        type="image/webp"
+        media=" (min-width: 320px)"
+      />
+      <img
+        class="sound__img"
+        src="./image/desctop/sunshine-desctop@1x.webp"
+        alt="sunshine"
+      />
+    </picture>
     <ul class="sound__list">
       <li class="sound__item">
         <h3 class="sound__subtitle">Maximum enjoyment</h3>
