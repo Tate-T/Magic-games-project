@@ -1,6 +1,17 @@
 .faq {
   padding-top: 170px;
 
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__title {
     color: $title-color;
     font-size: 54px;
@@ -8,6 +19,7 @@
     line-height: 120%;
     letter-spacing: 1.08px;
     text-transform: uppercase;
+    margin-bottom: 54px;
   }
 
   &__number {
@@ -16,6 +28,7 @@
     font-size: 28px;
     font-weight: 400;
     line-height: 125%;
+    margin-right: 32px;
   }
 
   &__paragraph {
@@ -26,14 +39,20 @@
   }
 
   &__question {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: $faq-color;
     color: $title-color;
-    font-family: "Roboto Condensed";
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 70%;
+    margin-left: auto;
   }
 
-  &__svg {
-    fill: $faq-color;
+  &__line {
+    width: 1440px;
+    height: 0px;
+    opacity: 0.1;
+    background: $description-color;
+    margin-left: 0;
+    margin-top: 24px;
   }
 }
