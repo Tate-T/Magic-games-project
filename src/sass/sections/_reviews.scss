@@ -130,7 +130,19 @@
     }
 
 
-
+    &__youtube {
+      width: 280px;
+      height: 180px;
+  
+      @media screen and (min-width: 768px) {
+        width: 408px;
+        height: 267px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 920px;
+        height: 590px;
+      }
+    }
     
 
     &__mem {
