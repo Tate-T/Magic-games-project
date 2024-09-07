@@ -1,10 +1,23 @@
 .faq {
-  padding-top: 170px;
+  padding-top: 50px;
+  transition: 700ms cubic-bezier(0.38, 0, 0.22, 1);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 170px;
+  }
 
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 112px;
+    gap: 24px;
+
+    @media screen and (min-width: 1200px) {
+      gap: 112px;
+    }
   }
 
   &__item {
@@ -14,45 +27,116 @@
 
   &__title {
     color: $title-color;
-    font-size: 54px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 120%;
     letter-spacing: 1.08px;
     text-transform: uppercase;
-    margin-bottom: 54px;
+    margin-bottom: 34px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 54px;
+      margin-bottom: 54px;
+    }
   }
 
   &__number {
     color: $title-color;
     font-family: "Roboto Condensed";
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 125%;
-    margin-right: 32px;
+    margin-right: 16px;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+      margin-right: 32px;
+    }
   }
 
   &__paragraph {
-    color: $title-color;
-    font-size: 28px;
-    font-weight: 600;
+    color: $description-color;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 125%;
+    max-width: 200px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+      font-weight: 600;
+      color: $title-color;
+    }
   }
 
   &__question {
-    width: 42px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background-color: $faq-color;
     color: $title-color;
     margin-left: auto;
+    font-size: 20px;
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 42px;
+      height: 42px;
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    color: $description-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 145%;
+    width: 100%;
+    max-width: 897px;
+    padding-left: 58px;
+    margin-top: 16px;
   }
 
   &__line {
-    width: 1440px;
+    width: 1059px;  
     height: 0px;
     opacity: 0.1;
     background: $description-color;
     margin-left: 0;
     margin-top: 24px;
+    @media screen and (max-width: 1199px) {
+      width: 648px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 280px;
+    }
+  }
+
+  .accordion-body {
+    background-color: $background-color;
+  }
+
+  .accordion-item:last-of-type .accordion-collapse {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: $background-color;
+  }
+
+  .accordion-flush .accordion-item {
+    border: none;
   }
 }
