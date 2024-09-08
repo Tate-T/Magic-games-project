@@ -150,10 +150,14 @@
   }
   
   &__box1 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 
     @media screen and (min-width: 768px) {
       display: flex;
+      flex-direction: row;
     }
 
   }
@@ -178,11 +182,6 @@
   &__kotik {
     width: 200px;
     height: 300px;
-  } 
-  
-  &__mem {
-      text-align: center;
-      color: white;
   }
   
 }
