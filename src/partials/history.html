@@ -22,11 +22,37 @@
         </ul>
       </div>
       <div class="history__block2">
-        <img
-          src="./image/desctop/coupleman-desctop@1x.webp"
-          alt="group man"
-          class="history__img1"
-        />
+        <picture>
+          <source
+            srcset="
+              ./image/desctop/coupleman-desctop@1x.webp 1x,
+              ./image/desctop/coupleman-desctop@2x.webp 2x
+            "
+            type="image/webp"
+            media=" (min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./image/tablet/coupleman-tablet@1x.webp 1x,
+              ./image/tablet/coupleman-tablet@2x.webp 2x
+            "
+            type="image/webp"
+            media=" (min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./image/mobile/coupleman-phone1x.webp 1x,
+              ./image/mobile/coupleman-phone2x.webp 2x
+            "
+            type="image/webp"
+            media=" (min-width: 320px)"
+          />
+          <img
+            class="sound__img"
+            src="./image/desctop/coupleman-desctop@1x.webp"
+            alt="sunshine"
+          />
+        </picture>
         <p class="history__text2">
           From Amar's point of view, the sound was so flat and unnatural that it
           was better not to listen to the music at all than to listen to it in
@@ -41,11 +67,37 @@
     </div>
 
     <div class="history__block3">
-      <img
-        src="./image/desctop/man-desctop@1x.webp"
-        alt="man scientist"
-        class="history__img2"
-      />
+      <picture>
+        <source
+          srcset="
+            ./image/desctop/man-desctop@1x.webp 1x,
+            ./image/desctop/man-desctop@2x.webp 2x
+          "
+          type="image/webp"
+          media=" (min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./image/tablet/man-tablet@1x.webp 1x,
+            ./image/tablet/man-tablet@2x.webp 2x
+          "
+          type="image/webp"
+          media=" (min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./image/mobile/man-phone1x.webp 1x,
+            ./image/mobile/man-phone2x.webp 2x
+          "
+          type="image/webp"
+          media=" (min-width: 320px)"
+        />
+        <img
+          class="sound__img"
+          src="./image/desctop/man-desctop@1x.webp"
+          alt="sunshine"
+        />
+      </picture>
       <div class="history__block5">
         <svg class="history__svg">
           <use href="./image/desctop/symbol-defs.svg#icon-untitled"></use>
