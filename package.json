@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/BOSE/",
+    "build": "vite build --base=/Magic-games-project/",
     "preview": "vite preview"
     },
     "devDependencies": {
