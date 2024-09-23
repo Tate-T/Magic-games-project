@@ -1,1 +1,19 @@
-// @import "./utils/variables";
+@import './common/reset';
+@import './common/base';
+
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixin';
+
+@import './components/header';
+@import './components/check-year';
+@import './components/guess';
+// @import './components'; камінь ножиці папір
+// @import './components'; калькулятор
+@import './components/time-calculator';
+// @import './components'; динозаврик
+@import './components/football';
+@import './components/three-numbers';
+@import './components/our-team';
+@import './components/choose-scientist';
+@import './components/footer';
