@@ -1,0 +1,205 @@
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  width: 1090px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.check-year {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.check-year__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.check-year__line {
+  width: 536px;
+  height: 1px;
+  margin: 36px auto;
+  background-color: black;
+}
+.check-year__subtitle {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.check-year__box {
+  display: flex;
+  gap: 149px;
+  justify-content: center;
+  margin-top: 36px;
+  align-items: center;
+}
+.check-year__position-box {
+  width: 160px;
+  position: relative;
+}
+.check-year__btn {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  height: 100%;
+  border-radius: 0px 20px 20px 0px;
+  background: #000;
+}
+.check-year__svg {
+  width: 15px;
+  height: 15px;
+  fill: #000;
+  stroke: #fff;
+}
+.check-year__input {
+  display: inline-flex;
+  padding: 10px 45px 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: #d7d7d7;
+  border: none;
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+}
+.check-year__input::-moz-placeholder {
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+}
+.check-year__input::placeholder {
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+}
+.check-year__result {
+  color: #000;
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  width: 230px;
+}
+
+.green-color {
+  color: #039900;
+}
+
+.red-color {
+  color: #900;
+}
+
+.guess__top-line {
+  width: 536px;
+  height: 1px;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guess__title {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-content: center;
+  display: flex;
+  margin-top: 36px;
+}
+
+.guess__box {
+  display: flex;
+  margin-top: 36px;
+  justify-content: space-around;
+}
+
+.guess__position-box {
+  position: relative;
+}
+
+.guess__input {
+  display: flex;
+  padding: 10px 45px 10px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  max-height: 35px;
+  max-width: 150px;
+  border-radius: 20px;
+  background: #d7d7d7;
+  border: none;
+  filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+  color: #7e7e7e;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.guess__number {
+  position: absolute;
+  top: 0;
+  left: 115px;
+}
+
+.guess__button {
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  background: #000;
+  max-height: 35px;
+}
+
+.guess__icon {
+  width: 15px;
+  height: 15px;
+  fill: transparent;
+  stroke: white;
+}/*# sourceMappingURL=main.css.map */
