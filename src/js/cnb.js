@@ -43,6 +43,7 @@ function playGame(botAnswer) {
   let resultMessage;
 
   if (userChoice === botAnswer) {
+    results.style.color = 'black';
     resultMessage = "Нічия!";
   } else if (
     (userChoice === 1 && botAnswer === 3) ||
@@ -52,10 +53,12 @@ function playGame(botAnswer) {
     peopleScore++;
     peopleScoreEl.textContent = peopleScore;
     resultMessage = "Ви виграли раунд!";
+    results.style.color = 'green';
   } else {
     botScore++;
     botScoreEl.textContent = botScore;
-    resultMessage = "Ви програли раунд!";
+    results.style.color = 'red';
+    resultMessage = "Комп'ютер виграв раунд!";
   }
 
   results.textContent = resultMessage;
