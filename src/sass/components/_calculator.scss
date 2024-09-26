@@ -1,0 +1,67 @@
+.calculator {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  &__button {
+    display: inline-flex;
+    padding: 5px 10px;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+    border-radius: 20px;
+    background: #000;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    width: 27px;
+    height: 25px;
+  }
+
+  &__button > p {
+    color: #fff;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+
+  &__title {
+    color: #000;
+    font-family: "Montserrat Alternates";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+  }
+
+  &__input {
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    background: #d7d7d7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  &__box-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 72px;
+  }
+
+  &__active {
+    background-color: rgb(129, 129, 129);
+  }
+}
