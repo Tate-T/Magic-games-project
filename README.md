@@ -1,1 +1,1 @@
-# BOSE
+# Magic Games | Interactive Games
