@@ -6,8 +6,8 @@ const divideBtn = document.getElementById("divide");
 const firstNumber = document.getElementById("firstNumber");
 const secondNumber = document.getElementById("secondNumber");
 
-const resultEl = document.getElementById("result");
-const checkResultBtn = document.getElementById("checkResult");
+const cnbResultEl = document.getElementById("cnbResultEl");
+const checkResultBtnEl = document.getElementById("cnbCheckResult");
 
 let currentOperation = null;
 
@@ -47,33 +47,33 @@ minusBtn.addEventListener("click", minusBtnClick);
 multiplyBtn.addEventListener("click", multiplyBtnClick);
 divideBtn.addEventListener("click", divideBtnClick);
 
-checkResultBtn.addEventListener("click", function () {
+checkResultBtnEl.addEventListener("click", function () {
   let num1 = parseFloat(firstNumber.value);
   let num2 = parseFloat(secondNumber.value);
 
   if (isNaN(num1) || isNaN(num2)) {
-    resultEl.textContent = "Введіть коректні числа!";
+    cnbResultEl.value = "Введіть коректні числа!";
     return;
   }
 
   switch (currentOperation) {
     case "plus":
-      resultEl.value = num1 + num2;
+      cnbResultEl.value = num1 + num2;
       break;
     case "minus":
-      resultEl.value = num1 - num2;
+      cnbResultEl.value = num1 - num2;
       break;
     case "multiply":
-      resultEl.value = num1 * num2;
+      cnbResultEl.value = num1 * num2;
       break;
     case "divide":
       if (num2 === 0) {
-        resultEl.value = "На 0 ділити не можна!";
+        cnbResultEl.value = "На 0 ділити не можна!";
         return;
       }
-      resultEl.value = num1 / num2;
+      cnbResultEl.value = num1 / num2;
       break;
     default:
-      resultEl.value = "Операція не вибрана!";
+      cnbResultEl.value = "Операція не вибрана!";
   }
 });
