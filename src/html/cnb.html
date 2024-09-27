@@ -1,0 +1,47 @@
+<section class="cnb">
+  <div class="container">
+    <div class="cnb__line"></div>
+    <h2 class="cnb__title">Камінь - ножиці - папір</h2>
+    <div class="cnb__box">
+      <div class="cnb__choice">
+        <img
+          id="stone"
+          draggable="false"
+          src="../img/stone.png"
+          alt="Stone"
+          class="cnb__images"
+        />
+        <img
+          id="scissors"
+          draggable="false"
+          src="../img/scissors.png"
+          alt="Scissors"
+          class="cnb__images"
+        />
+        <img
+          id="paper"
+          draggable="false"
+          src="../img/paper.png"
+          alt="Paper"
+          class="cnb__images"
+        />
+        <div class="cnb__results">
+          <p>
+            Рахунок:<br />
+            Комп’ютер - <span id="botScore">0</span><br />Ви - <span id="peopleScore">0</span>
+          </p>
+        </div>
+      </div>
+      <p id="results" class="cnb__result">a</p>
+      <div class="cnb__button-box">
+        <button id="checkResult" class="cnb__check-result">
+          Варіант комп’ютера
+        </button>
+        <svg id="reload" class="cnb__svg">
+          <use href="../img/symbol-defs.svg#icon-reload"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="cnb__line"></div>
+  </div>
+</section>
