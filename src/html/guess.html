@@ -1,35 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section class="guess-section">
-      <div class="container">
-        <div class="guess__top-line"></div>
-        <p class="guess__title">Вгадай число, яке загадав комп’ютер</p>
-        <div class="guess__box">
-          <div class="guess__position-box">
-            <input
-              placeholder="Введіть число"
-              type="text"
-              name="guessNumber"
-              id="guess-number"
-              class="guess__input"
-            />
-            <label for="guess-number" class="guess__number">
-              <button type="button" class="guess__button">
-                <svg class="guess__icon">
-                  <use href="../img/symbol-defs.svg#icon-search"></use>
-                </svg>
-              </button>
-            </label>
-          </div>
-          <p data-aos="zoom-in" class="guess__output-text green-color"></p>
-        </div>
+<section class="guess-section">
+  <div class="container">
+    <div class="guess__top-line"></div>
+    <p class="guess__title">Вгадай число, яке загадав комп’ютер</p>
+    <div class="guess__box">
+      <div class="guess__position-box">
+        <input
+          placeholder="Введіть число"
+          type="text"
+          name="guessNumber"
+          id="guess-number"
+          class="guess__input"
+        />
+        <label for="guess-number" class="guess__number">
+          <button type="button" class="guess__button">
+            <svg class="guess__icon">
+              <use href="../img/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </button>
+        </label>
       </div>
-    </section>
-  </body>
-</html>
+      <p data-aos="zoom-in" class="guess__output-text green-color"></p>
+    </div>
+  </div>
+</section>
