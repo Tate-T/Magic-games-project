@@ -1,0 +1,126 @@
+.header{
+    height: 80px;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    
+    &__container{
+        display: flex;
+        align-items: center;
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        background-color: #FFF;
+        z-index: 10;
+    }
+    &__logo{
+        stroke: #000;
+        fill: #FFF;
+        width: 93px;
+        height: 38px;
+        margin-right: 81px;
+    }
+    &__menu{
+        display: flex;
+        gap: 50px;
+    }
+    &__mode-btn{
+        background-color: transparent;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    &__mode-svg{
+        width: 10px;
+        height: 9px;
+        stroke: #000;
+        fill: #FFF;
+
+        transition: transform 0.5s;
+    }
+    &__menu-link{
+        color: #000;
+    }
+    &__theme-btn{
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        margin-right: 10px;
+        margin-left: auto;
+    }
+    &__theme-btn input {
+        display:none;
+    }
+    &__theme-slider{
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #7A7A7A;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 11px;
+    }
+    &__theme-slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 0;
+        bottom: 0;
+        background-color: #FFF;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 50%;
+        background-image: url(../../img/light-theme.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    input:checked + &__theme-slider:before {
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+        background-color: #000;
+        background-image: url(../../img/dark-theme.png);
+    }
+
+    &__mode-list{
+        position: absolute;
+        left: 174px;
+        top: 80px;
+        width: 160px;
+        border: solid #000;
+        border-top: none;
+        border-radius: 0px 0px 20px 20px;
+        background-color: #FFF;
+    }
+    &__mode-option{
+        padding: 10px;
+        border-bottom: solid #000;
+        display: flex;
+        justify-content: center;
+    }
+    &__mode-option:last-of-type{
+        border: none;
+        border-radius: 0px 0px 20px 20px;
+    }
+    &__mode-option:hover{
+        background-color: #F1F1F1;
+    }
+}  
+.hidden-mode-list{
+    display: none;
+}
+.reverse-arrow{
+    transform: rotate(180deg);
+}
+.active-mode{
+    background-color: #F1F1F1;
+}
