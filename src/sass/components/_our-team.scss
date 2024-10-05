@@ -1,12 +1,20 @@
 .our-team{
-    padding-top: 36px;
-    padding-bottom: 36px;
     font-family: "Montserrat Alternates";
 
     &__container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    &__top-line{
+        width: 536px;
+        height: 1px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 36px;
     }
     &__title{
         font-size: 16px;
