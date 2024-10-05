@@ -751,7 +751,7 @@ input:checked + .header__theme-slider:before {
   width: 536px;
   height: 1px;
   margin-bottom: 36px;
-  background-color: #000;
+  background-color: black;
   margin-left: auto;
   margin-right: auto;
 }
@@ -923,6 +923,8 @@ input:checked + .header__theme-slider:before {
   background-color: rgba(0, 0, 0, 0.159);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+  transform: scale(1);
+  transition-duration: 150ms;
 }
 
 .modal {
@@ -985,7 +987,8 @@ input:checked + .header__theme-slider:before {
 }
 
 .hide-modal {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hi-backdrop {
