@@ -11,13 +11,13 @@
     &__top-line{
         width: 536px;
         height: 1px;
-        background-color: black;
+        background-color: var(--black);
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 36px;
     }
     &__title{
-        color: #000;
+        color: var(--black);
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 36px;
@@ -32,11 +32,17 @@
         padding: 10px 20px;
         max-width: 135px;
         border-radius: 20px;
-        background: #D7D7D7;
+        background: var(--light-grey);
         box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
         border: none;
 
-        color: #7E7E7E;
+        color: var(--grey);
+        font-size: 12px;
+        font-weight: 400;
+        color:rgb(28, 28, 28);
+    }
+    &__text{
+        color: var(--black);
         font-size: 12px;
         font-weight: 400;
     }
