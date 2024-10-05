@@ -11,12 +11,12 @@
     width: 165px;
     height: 70px;
     flex-shrink: 0;
-    stroke: #000;
-    fill: #fff;
+    stroke: $black;
+    fill: $white;
     stroke-width: 0.5px;
   }
   &__information {
-    color: #000;
+    color: $black;
     font-family: "Montserrat Alternates";
     font-size: 12px;
     font-weight: 400;
@@ -29,13 +29,13 @@
     align-items: flex-start;
     gap: 10px;
     border-radius: 20px;
-    background: #d7d7d7;
+    background: $light-grey;
     border: none;
     margin-right: 36px;
     margin-bottom: 18px;
 
     &::placeholder {
-      color: #7e7e7e;
+      color: $grey;
       font-family: "Montserrat Alternates";
       font-size: 12px;
       font-weight: 400;
@@ -47,8 +47,8 @@
     align-items: flex-start;
     gap: 10px;
     border-radius: 20px;
-    background: #000;
-    color: #fff;
+    background: $black;
+    color: $white;
     font-family: "Montserrat Alternates";
     font-size: 12px;
     font-style: normal;
@@ -56,7 +56,7 @@
     line-height: normal;
   }
   &__text {
-    color: #000;
+    color: $black;
     font-family: "Montserrat Alternates";
     font-size: 6px;
     font-weight: 400;
@@ -81,11 +81,11 @@
   height: 245px;
   flex-shrink: 0;
   border-radius: 20px;
-  background: #fff;
+  background: $white;
   border: solid rgba(0, 0, 0, 0.072) 1.5px;
 
   &__text {
-    color: #000;
+    color: $black;
     text-align: center;
     font-family: "Montserrat Alternates";
     font-size: 20px;
@@ -127,7 +127,7 @@
     height: 15px;
     flex-shrink: 0;
     stroke-width: 0.000001px;
-    stroke: #000;
+    stroke: $black;
   }
 }
 .hide-modal{
