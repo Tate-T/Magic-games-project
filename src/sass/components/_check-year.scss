@@ -3,7 +3,7 @@
   padding-bottom: 36px;
 
   &__title {
-    color: #000;
+    color: $black;
     font-family: "Montserrat Alternates";
     font-size: 24px;
     font-weight: 400;
@@ -16,7 +16,7 @@
     background-color: black;
   }
   &__subtitle {
-    color: #000;
+    color: $black;
     font-family: "Montserrat Alternates";
     font-size: 16px;
     font-weight: 400;
@@ -42,13 +42,13 @@
     padding: 10px;
     height: 100%;
     border-radius: 0px 20px 20px 0px;
-    background: #000;
+    background: $black;
   }
   &__svg {
     width: 15px;
     height: 15px;
-    fill: #000;
-    stroke: #fff;
+    fill: $black;
+    stroke: $white;
   }
   &__input {
     display: inline-flex;
@@ -56,19 +56,19 @@
     align-items: flex-start;
     gap: 10px;
     border-radius: 20px;
-    background: #d7d7d7;
+    background: $light-grey;
     border: none;
     filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
 
     &::placeholder {
-      color: #7e7e7e;
+      color: $grey;
       font-family: "Montserrat Alternates";
       font-size: 12px;
       font-weight: 400;
     }
   }
   &__result {
-    color: #000;
+    color: $black;
     text-align: right;
     font-family: "Montserrat Alternates";
     font-size: 12px;
