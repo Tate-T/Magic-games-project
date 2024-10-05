@@ -4,7 +4,7 @@ import './js/guess';
 import './js/cnb';
 import './js/calculator';
 import './js/time-calculator';
-import './js/google-dino';
+// import './js/google-dino';
 import './js/football';
 import './js/three-numbers';
 import './js/our-team';
