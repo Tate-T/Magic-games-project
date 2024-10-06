@@ -1,13 +1,13 @@
 .time-calculator__top-line {
   width: 536px;
   height: 1px;
-  background-color: black;
+  background-color: var(--black);
   margin-left: auto;
   margin-right: auto;
 }
 
 .time-calculator__title {
-  color: #000;
+  color: var(--black);
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -39,11 +39,11 @@
   max-height: 35px;
   max-width: 150px;
   border-radius: 20px;
-  background: #d7d7d7;
+  background: var(--light-grey);
   border: none;
   filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
 
-  color: #7e7e7e;
+  color: var(--grey);
   font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;
@@ -59,7 +59,7 @@
 .time-calculator__button {
   padding: 10px;
   border-radius: 0px 20px 20px 0px;
-  background: #000;
+  background: var(--black);
   max-height: 35px;
 }
 
@@ -67,17 +67,17 @@
   width: 15px;
   height: 15px;
   fill: transparent;
-  stroke: white;
+  stroke: var(--white);
 }
 
 .time-calculator__line {
   width: 100px;
   height: 0px;
-  border: 1px dashed black;
+  border: 1px dashed var(--black);
 }
 
 .time-calculator__output-text {
-  color: #000;
+  color: var(--black);
   font-family: "Montserrat Alternates";
   font-size: 12px;
   font-weight: 400;

@@ -7,13 +7,13 @@
 .football__top-line {
   width: 536px;
   height: 1px;
-  background-color: black;
+  background-color: var(--black);
   margin-left: auto;
   margin-right: auto;
 }
 
 .football__title {
-  color: #000;
+  color: var(--black);
   font-family: "Montserrat Alternates";
   font-size: 16px;
   font-weight: 400;
@@ -29,7 +29,7 @@
   height: 220px;
   background-color: #5abb58;
   border-radius: 37px;
-  border: 2px solid #000;
+  border: 2px solid var(--black);
 	position: relative;
 }
 
