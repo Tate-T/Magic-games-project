@@ -1,8 +1,20 @@
 <section class="dino">
     <h2 class="dino__title">Google динозавр</h2>
-    <div class="dino__game-container">
-        <div class="dino__ground"></div>
-        <div class="dino__character" id="dino"></div>
-        <div class="dino__cactus" id="cactus"></div>
+    <div id="gameContainer" class="dino__game-container">
+      <div class="dino__ground"></div>
+      <div class="dino__character" id="dino"></div>
+      <div class="dino__cactus" id="cactus"></div>
     </div>
-</section>
+    <div class="google-hi-backdrop google-hi-modal-hidden">
+      <div class="google-hi-modal">
+        <button class="google-hi-modal__close">
+          <svg class="google-hi-modal__svg">
+            <use href="../img/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="google-hi-modal__text">Ви програли!</p>
+        <button class="google-hi-modal__submit">Добре</button>
+      </div>
+    </div>
+  </section>
+  

@@ -10,7 +10,7 @@
   }
 
   &__title {
-    color: #000;
+    color: var(--black);
     font-family: "Montserrat Alternates";
     font-size: 16px;
     font-style: normal;
@@ -23,7 +23,7 @@
     width: 536px;
     height: 1px;
     margin: 36px auto;
-    background-color: black;
+    background-color: var(--black);
   }
   &__choice {
     display: flex;
@@ -46,7 +46,7 @@
   }
 
   &__results > p {
-    color: #000;
+    color: var(--black);
     font-family: "Montserrat Alternates";
     font-size: 12px;
     font-style: normal;
@@ -86,7 +86,7 @@
     gap: 10px;
     border-radius: 20px;
     background: #000;
-    color: #fff;
+    color: var(--white);
     font-family: "Montserrat Alternates";
     font-size: 12px;
     font-style: normal;
