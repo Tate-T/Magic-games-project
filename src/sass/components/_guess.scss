@@ -1,9 +1,9 @@
-.green-color { 
-	color: #039900;
+.green-color {
+  color: #039900;
 }
 
-.red-color { 
-	color: #900;
+.red-color {
+  color: #900;
 }
 
 .guess__top-line {
@@ -23,17 +23,21 @@
   line-height: normal;
   justify-content: center;
   display: flex;
-	margin-top: 36px;
+  margin-top: 36px;
 }
 
 .guess__box {
   display: flex;
   margin-top: 36px;
-	justify-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 627px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.guess__position-box { 
-	position: relative;
+.guess__position-box {
+  position: relative;
 }
 
 .guess__input {
@@ -42,7 +46,7 @@
   align-items: flex-start;
   gap: 10px;
   max-height: 35px;
-	max-width: 150px;
+  max-width: 150px;
   border-radius: 20px;
   background: #d7d7d7;
   border: none;
@@ -55,22 +59,32 @@
   line-height: normal;
 }
 
-.guess__number { 
-	position: absolute;
-	top: 0;
-	left: 115px;
+.guess__number {
+  position: absolute;
+  top: 0;
+  left: 115px;
 }
 
-.guess__button { 
-	padding: 10px;
-	border-radius: 0px 20px 20px 0px;
-	background: var(--black);
-	max-height: 35px;
+.guess__button {
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  background: var(--black);
+  max-height: 35px;
 }
 
-.guess__icon { 
-	width: 15px;
-	height: 15px;
-	fill: transparent;
-	stroke: var(--white);
+.guess__icon {
+  width: 15px;
+  height: 15px;
+  fill: transparent;
+  stroke: var(--white);
+}
+
+.guess__output-text {
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+
+  width: 275px;
 }

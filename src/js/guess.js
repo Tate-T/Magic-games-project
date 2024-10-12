@@ -20,4 +20,6 @@ buttonEl.addEventListener("click", (e) => {
       textEl.classList.add("red-color");
     }
   }
+
+  inputEL.value = "";
 });
