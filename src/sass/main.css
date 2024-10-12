@@ -969,6 +969,7 @@ input:checked + .header__theme-slider:before {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3882352941);
 }
 .choose-scientist__img-info {
   color: var(--white);
