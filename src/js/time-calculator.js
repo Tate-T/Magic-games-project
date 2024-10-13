@@ -21,5 +21,9 @@ buttonEl.addEventListener("click", (e) => {
     textEl.textContent = `${day} дн. ${hour}:${min}`;
   }
 
+  if (isNaN(inputEl.value) === true) {
+    textEl.textContent = "Введіть число!";
+  }
+
   inputEl.value = "";
 });
