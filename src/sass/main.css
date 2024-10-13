@@ -146,14 +146,14 @@ body {
   background-color: var(--white);
   transition: 0.4s;
   border-radius: 50%;
-  background-image: url(../../img/light-theme.png);
+  background-image: url(../img/light-theme.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 input:checked + .header__theme-slider:before {
   transform: translateX(20px);
   background-color: #000;
-  background-image: url(../../img/dark-theme.png);
+  background-image: url(../img/dark-theme.png);
 }
 .header__mode-list {
   position: absolute;
@@ -668,7 +668,7 @@ input:checked + .header__theme-slider:before {
   left: 10px;
   width: 44px;
   height: 44px;
-  background-image: url("../../img/dino.png");
+  background-image: url("../img/dino.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -678,7 +678,7 @@ input:checked + .header__theme-slider:before {
   right: 0;
   width: 34px;
   height: 50px;
-  background-image: url("../../img/cactus.png");
+  background-image: url("../img/cactus.png");
   background-size: contain;
   background-repeat: no-repeat;
   animation: moveCactus 2s infinite linear;
@@ -707,6 +707,14 @@ input:checked + .header__theme-slider:before {
     bottom: 10px;
   }
 }
+.dino__losses {
+  color: var(--black);
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .google-hi-backdrop {
   display: flex;
   justify-content: center;
