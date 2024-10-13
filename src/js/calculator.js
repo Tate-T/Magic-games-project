@@ -50,6 +50,8 @@ divideBtn.addEventListener("click", divideBtnClick);
 checkResultBtnEl.addEventListener("click", function () {
   let num1 = parseFloat(firstNumber.value);
   let num2 = parseFloat(secondNumber.value);
+  firstNumber.value = "";
+  secondNumber.value = "";
 
   if (isNaN(num1) || isNaN(num2)) {
     cnbResultEl.value = "Введіть коректні числа!";
