@@ -405,6 +405,7 @@ input:checked + .header__theme-slider:before {
   height: 60px;
   border-radius: 20px;
   cursor: pointer;
+  border: 2px solid var(--black);
 }
 .cnb__results {
   margin-left: 70px;
@@ -432,6 +433,7 @@ input:checked + .header__theme-slider:before {
   height: 20px;
   margin-left: 50px;
   cursor: pointer;
+  fill: var(--black);
 }
 .cnb__result {
   margin-top: 36px;
@@ -444,7 +446,7 @@ input:checked + .header__theme-slider:before {
   align-items: flex-start;
   gap: 10px;
   border-radius: 20px;
-  background: #000;
+  background: var(--black);
   color: var(--white);
   font-family: "Montserrat Alternates";
   font-size: 12px;
@@ -1160,6 +1162,29 @@ input:checked + .header__theme-slider:before {
   flex-shrink: 0;
   stroke-width: 0.000001px;
   stroke: var(--black);
+}
+
+.required-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 420px;
+  right: 10px;
+  width: 250px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--white);
+  border: solid rgba(255, 1, 1, 0.365) 1.5px;
+  box-shadow: rgba(255, 0, 0, 0.16) 0px 10px 36px 0px, rgba(248, 23, 23, 0.06) 0px 0px 0px 1px;
+  transition-duration: 500ms;
+  transform: translate(0);
+}
+
+.transform {
+  transform: translate(150%);
+  transition-duration: 500ms;
 }
 
 .hide-modal {
