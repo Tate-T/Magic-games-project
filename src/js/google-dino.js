@@ -2,10 +2,14 @@ const dino = document.getElementById("dino");
 const cactus = document.getElementById("cactus");
 const gameContainer = document.getElementById("gameContainer");
 const lossCounter = document.getElementById("lossCounter");
+const scoreDisplay = document.getElementById("scoreDisplay");
 
 let isJumping = false;
 let isAlive = false;
 let lossesCount = 0; 
+let score = 0; 
+let collisionCheck;
+let scoreTimer;
 
 cactus.style.display = "none"; 
 
@@ -21,11 +25,13 @@ gameContainer.addEventListener("click", function () {
 
 function startGame() {
   isAlive = true;
+  score = 0; 
+  scoreDisplay.innerText = score;
   cactus.style.display = "block"; 
-  cactus.style.left = ""; 
   cactus.style.animation = "moveCactus 2s infinite linear"; 
 
   collisionCheck = setInterval(checkCollision, 10); 
+  scoreTimer = setInterval(updateScore, 100);
 }
 
 function jump() {
@@ -38,8 +44,6 @@ function jump() {
     }, 500);
   }
 }
-
-let collisionCheck = setInterval(checkCollision, 10);
 
 function checkCollision() {
   if (isAlive) {
@@ -56,8 +60,16 @@ function checkCollision() {
   }
 }
 
+function updateScore() {
+  if (isAlive) {
+    score++; 
+    scoreDisplay.innerText = score; 
+  }
+}
+
 function gameOver() {
   clearInterval(collisionCheck);
+  clearInterval(scoreTimer); 
   isAlive = false; 
   cactus.style.animation = "none"; 
 
@@ -90,6 +102,17 @@ function resetGame() {
 
   dino.classList.remove("jump");
 
+  score = 0; 
+  scoreDisplay.innerText = score; 
   
   cactus.style.left = "100%"; 
 }
+
+const style = document.createElement('style');
+style.innerHTML = `
+@keyframes moveCactus {
+  0% { left: 100%; }
+  100% { left: -50px; }
+}
+`;
+document.head.appendChild(style);
