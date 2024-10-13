@@ -1251,6 +1251,13 @@ input:checked + .header__theme-slider:before {
   transition-duration: 500ms;
   transform: translate(0);
 }
+.required-modal__text {
+  color: var(--black);
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  font-weight: 400;
+}
 
 .transform {
   transform: translate(150%);
