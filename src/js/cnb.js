@@ -12,7 +12,10 @@ let peopleScore = 0;
 let botScore = 0;      
 
 reload.addEventListener("click", () => {
-    window.location.reload();
+    peopleScoreEl.textContent = 0;
+    botScoreEl.textContent = 0;
+    peopleScore = 0;
+    botScore = 0;
 });
 
 function clearActiveClasses() {
