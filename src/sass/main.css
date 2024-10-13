@@ -146,14 +146,14 @@ body {
   background-color: var(--white);
   transition: 0.4s;
   border-radius: 50%;
-  background-image: url(../img/light-theme.png);
+  background-image: url(./img/light-theme.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 input:checked + .header__theme-slider:before {
   transform: translateX(20px);
   background-color: #000;
-  background-image: url(../img/dark-theme.png);
+  background-image: url(./img/dark-theme.png);
 }
 .header__mode-list {
   position: absolute;
