@@ -322,6 +322,10 @@ input:checked + .header__theme-slider:before {
   display: flex;
   margin-top: 36px;
   justify-content: space-evenly;
+  align-items: center;
+  width: 627px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .guess__position-box {
@@ -364,6 +368,15 @@ input:checked + .header__theme-slider:before {
   height: 15px;
   fill: transparent;
   stroke: var(--white);
+}
+
+.guess__output-text {
+  text-align: right;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  width: 275px;
 }
 
 .cnb {
@@ -504,6 +517,7 @@ input:checked + .header__theme-slider:before {
   align-items: flex-start;
   gap: 10px;
   border-radius: 20px;
+  color: var(--black);
   background: var(--white);
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
 }
@@ -544,9 +558,12 @@ input:checked + .header__theme-slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   gap: 33px;
   margin-top: 36px;
   margin-bottom: 36px;
+  width: 392px;
 }
 
 .time-calculator__input {
@@ -599,13 +616,16 @@ input:checked + .header__theme-slider:before {
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
+  width: 76px;
 }
 
 .dino {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 150px 0;
+  justify-content: center;
+  padding-bottom: 36px;
+  width: 100%;
 }
 .dino__title {
   color: var(--black);
@@ -615,6 +635,16 @@ input:checked + .header__theme-slider:before {
   font-weight: 400;
   line-height: normal;
   padding-bottom: 36px;
+  text-align: center;
+}
+.dino__tip {
+  color: var(--grey);
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 130px;
 }
 .dino__game-container {
   position: relative;
@@ -623,6 +653,7 @@ input:checked + .header__theme-slider:before {
   border: 2px solid #797979;
   background-color: var(--white);
   overflow: hidden;
+  margin: 0 auto;
 }
 .dino__ground {
   position: absolute;
@@ -775,6 +806,22 @@ input:checked + .header__theme-slider:before {
   margin-bottom: 36px;
 }
 
+.football__score-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.football__first-score,
+.football__second-score {
+  color: var(--black);
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .football__box {
   width: 720px;
   height: 220px;
@@ -788,9 +835,31 @@ input:checked + .header__theme-slider:before {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 82px;
+  left: 340px;
   transition: 1000ms all ease-in-out;
+}
+
+.football__gates {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 60px;
+  left: -20px;
+  transform: rotate(270deg);
+}
+
+.football__second-gates {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 60px;
+  right: -20px;
+  transform: rotate(90deg);
+}
+
+.football__two-dots {
+  color: var(--black);
 }
 
 .three-numbers {
@@ -1173,6 +1242,7 @@ input:checked + .header__theme-slider:before {
   right: 10px;
   width: 250px;
   height: 100px;
+  width: 207px;
   flex-shrink: 0;
   border-radius: 20px;
   background: var(--white);
