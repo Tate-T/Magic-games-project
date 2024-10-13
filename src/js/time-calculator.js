@@ -20,4 +20,6 @@ buttonEl.addEventListener("click", (e) => {
   } else {
     textEl.textContent = `${day} дн. ${hour}:${min}`;
   }
+
+  inputEl.value = "";
 });
