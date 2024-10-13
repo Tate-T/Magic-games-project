@@ -12,10 +12,5 @@ checkYearBtnEl.addEventListener('click', () => {
         checkYearResultText.classList.add('not-leap-year')
         checkYearResultText.classList.remove('leap-year')
     }
+    checkYearInputEl.value = ''
 })
-// if (a === NaN) {
-//     checkYearResultText.textContent = 'Ви ввели не рік, спробуйте знову'
-//     checkYearResultText.classList.remove('leap-year')
-//     checkYearResultText.classList.remove('not-leap-year')
-//     console.log(',kz')
-// }
