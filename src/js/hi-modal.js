@@ -12,7 +12,8 @@ username.addEventListener("change", ()=>{
     nameResult = username.value;
 })
 submitName.addEventListener("click", ()=>{
-    if(nameResult) hiUser.textContent = nameResult;
-    console.log(nameResult);
-    modal.classList.add("hi-modal-hidden");
+    if(nameResult){
+        hiUser.textContent = nameResult;
+        modal.classList.add("hi-modal-hidden");
+    }
 })
