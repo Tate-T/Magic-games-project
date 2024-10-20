@@ -1,6 +1,7 @@
 const inputEl = document.querySelector(".time-calculator__input");
 const buttonEl = document.querySelector(".time-calculator__button");
 const textEl = document.querySelector(".time-calculator__output-text");
+const modalEl = document.querySelector(".time-calculator__modal");
 
 buttonEl.addEventListener("click", (e) => {
   const day = Math.floor(Number(inputEl.value) / 1440);
@@ -23,6 +24,10 @@ buttonEl.addEventListener("click", (e) => {
 
   if (isNaN(inputEl.value) === true) {
     textEl.textContent = "Введіть число!";
+    modalEl.classList.remove("time-calculator__transform");
+    setTimeout(() => {
+      modalEl.classList.add("time-calculator__transform");
+    }, 4000);
   }
 
   inputEl.value = "";

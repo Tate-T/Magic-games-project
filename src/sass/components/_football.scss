@@ -79,3 +79,73 @@
 .football__two-dots { 
   color: var(--black);
 }
+
+.football-backdrop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  visibility: visible;
+  
+  opacity: 1;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.football-transform { 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.football-modal{
+  border-radius: 20px;
+  background: var(--white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1.2);
+  transition: transform 500ms ease-in-out;
+  width: 576px;
+
+  background-image: url("../../img/game-development.png"), url("../../img/puzzle.png"), url("../../img/sword.png"), url("../../img/tic-tac-toe.png");
+  background-repeat: no-repeat;
+  background-position: top 50px right 41px, top 30px left 50px, top 100px left 110px, top 100px right 100px;
+  background-size: 30px;
+
+  &__close{
+      margin-left: auto;
+      background-color: transparent;
+  }
+  &__svg{
+      width: 15px;
+      height: 15px;
+  }
+  &__text{
+      color: var(--black);
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      max-width: 392px;
+      margin-bottom: 42px;
+  }
+  &__submit{
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: #000;
+      box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+      color: var(--white);
+      font-size: 12px;
+      font-weight: 400;
+  }
+}
+.football-modal-hidden{
+  opacity: 0;
+  visibility: hidden;
+}
