@@ -20,7 +20,7 @@
     
     <title>Magic Games Project</title>
     <script type="module" crossorigin src="/Magic-games-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Magic-games-project/assets/index-2a1a2505.css">
+    <link rel="stylesheet" href="/Magic-games-project/assets/index-eae3213c.css">
   </head>
   <body>
     <header class="header">
@@ -102,7 +102,9 @@
     </div>
   </div>
 </section>
-
+<div class="guess__modal guess__transform">
+  <p class="guess__modal-text"></p>
+</div>
         <section class="cnb game">
   <div class="container">
     <div class="cnb__line"></div>
@@ -193,6 +195,9 @@
     </div>
   </div>
 </section>
+<div class="time-calculator__modal time-calculator__transform">
+  <p class="time-calculator__modal-text">Введіть число!</p>
+</div>
 
         <section class="dino game">
   <div class="cnb__line"></div>
@@ -231,11 +236,30 @@
     </div>
     <div class="football__box">
       <img src="data:image/png;base64,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" alt="ball" class="football__img" />
-      <img src="/Magic-games-project/assets/football-gates-0a93350d.webp" alt="football gates" class="football__gates">
-      <img src="/Magic-games-project/assets/football-gates-0a93350d.webp" alt="football gates" class="football__second-gates">
+      <img
+        src="/Magic-games-project/assets/football-gates-0a93350d.webp"
+        alt="football gates"
+        class="football__gates"
+      />
+      <img
+        src="/Magic-games-project/assets/football-gates-0a93350d.webp"
+        alt="football gates"
+        class="football__second-gates"
+      />
     </div>
   </div>
 </section>
+<div class="football-backdrop football-transform">
+  <div class="football-modal">
+    <button class="football-modal__close">
+      <svg class="football-modal__svg">
+        <use href="/Magic-games-project/assets/symbol-defs-77a1e4fb.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="football-modal__text">ГООООООООЛ!</p>
+    <button class="football-modal__submit">Добре</button>
+  </div>
+</div>
 
         <section class="three-numbers numerical">
     <div class="container three-numbers__container">
