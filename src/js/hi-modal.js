@@ -12,6 +12,7 @@ username.addEventListener("change", ()=>{
     nameResult = username.value;
 })
 submitName.addEventListener("click", ()=>{
+    event.preventDefault();
     if(nameResult){
         hiUser.textContent = nameResult;
         modal.classList.add("hi-modal-hidden");
