@@ -2,6 +2,9 @@ const field = document.querySelector(".football__box");
 const ball = document.querySelector(".football__img");
 const firstScore = document.querySelector(".football__first-score");
 const secondScore = document.querySelector(".football__second-score");
+const backdropEl = document.querySelector(".football-backdrop");
+const buttonEl = document.querySelector(".football-modal__submit");
+const closeModalEl = document.querySelector(".football-modal__close");
 let firstNumber = 0;
 let secondNumber = 0;
 let firstOutputNumber = 0;
@@ -10,14 +13,7 @@ let secondOutputNumber = 0;
 function goal() {
   ball.style.top = "82px";
   ball.style.left = "340px";
-}
-
-function outputFirst() {
-  firstScore.textContent = firstOutputNumber;
-}
-
-function outputSecond() {
-  secondScore.textContent = secondOutputNumber;
+  backdropEl.classList.remove("football-transform");
 }
 
 function ballThrow() {
@@ -60,25 +56,35 @@ function ballThrow() {
       setTimeout(goal, 1000);
     }
 
-    if (ballCords.top >= 65 && ballCords.top <= 105 && ballCords.left >= 637) { 
+    if (ballCords.top >= 65 && ballCords.top <= 105 && ballCords.left >= 637) {
       secondNumber = secondNumber + 1;
-      setTimeout(goal, 1000)
+      setTimeout(goal, 1000);
     }
 
     if (firstNumber < 10) {
       firstOutputNumber = `0${firstNumber}`;
-    } else { 
+    } else {
       firstOutputNumber = `${firstNumber}`;
     }
 
     if (secondNumber < 10) {
       secondOutputNumber = `0${secondNumber}`;
-    } else{ 
+    } else {
       secondOutputNumber = `${secondNumber}`;
     }
 
-    setTimeout(outputFirst, 1000);
-    setTimeout(outputSecond, 1000);
+    setTimeout(() => {
+      firstScore.textContent = firstOutputNumber;
+      secondScore.textContent = secondOutputNumber;
+    }, 1000);
+  });
+
+  buttonEl.addEventListener("click", () => {
+    backdropEl.classList.add("football-transform");
+  });
+
+  closeModalEl.addEventListener("click", () => {
+    backdropEl.classList.add("football-transform");
   });
 }
 
