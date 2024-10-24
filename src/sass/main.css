@@ -37,7 +37,7 @@ input {
 }
 
 body {
-  cursor: url("../../img/cursor.webp"), auto;
+  cursor: url("../img/cursor.webp"), auto;
 }
 
 .container {
@@ -50,7 +50,7 @@ body {
 }
 
 .main {
-  background: url(../../img/Group.svg);
+  background: url(../img/Group.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -63,6 +63,10 @@ body {
 .box {
   background-color: var(--white);
   max-width: 1090px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -146,14 +150,14 @@ body {
   background-color: var(--white);
   transition: 0.4s;
   border-radius: 50%;
-  background-image: url(./img/light-theme.png);
+  background-image: url(././img/light-theme.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 input:checked + .header__theme-slider:before {
   transform: translateX(20px);
   background-color: #000;
-  background-image: url(./img/dark-theme.png);
+  background-image: url(././img/dark-theme.png);
 }
 .header__mode-list {
   position: absolute;
@@ -379,6 +383,39 @@ input:checked + .header__theme-slider:before {
   width: 275px;
 }
 
+.guess__modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 420px;
+  right: 10px;
+  width: 250px;
+  height: 100px;
+  width: 207px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--white);
+  border: solid rgba(255, 1, 1, 0.365) 1.5px;
+  box-shadow: rgba(255, 0, 0, 0.16) 0px 10px 36px 0px, rgba(248, 23, 23, 0.06) 0px 0px 0px 1px;
+  transition-duration: 500ms;
+  transform: translate(0);
+}
+
+.guess__modal-text {
+  color: var(--black);
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.guess__transform {
+  transform: translate(150%);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+
 .cnb {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -433,6 +470,7 @@ input:checked + .header__theme-slider:before {
 }
 .cnb__images-active {
   border: 2px solid rgb(135, 135, 135);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.54);
   cursor: pointer;
 }
 .cnb__button-box {
@@ -517,8 +555,8 @@ input:checked + .header__theme-slider:before {
   align-items: flex-start;
   gap: 10px;
   border-radius: 20px;
-  color: var(--black);
-  background: var(--white);
+  color: black;
+  background: white;
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
 }
 .calculator__box-button {
@@ -619,6 +657,39 @@ input:checked + .header__theme-slider:before {
   width: 76px;
 }
 
+.time-calculator__modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 420px;
+  right: 10px;
+  width: 250px;
+  height: 100px;
+  width: 207px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--white);
+  border: solid rgba(255, 1, 1, 0.365) 1.5px;
+  box-shadow: rgba(255, 0, 0, 0.16) 0px 10px 36px 0px, rgba(248, 23, 23, 0.06) 0px 0px 0px 1px;
+  transition-duration: 500ms;
+  transform: translate(0);
+}
+
+.time-calculator__modal-text {
+  color: var(--black);
+  text-align: center;
+  font-family: "Montserrat Alternates";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.time-calculator__transform {
+  transform: translate(150%);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+
 .dino {
   display: flex;
   flex-direction: column;
@@ -694,6 +765,16 @@ input:checked + .header__theme-slider:before {
 }
 .jump {
   animation: jump 0.5s ease-out;
+}
+
+.dino__score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: var(--grey);
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  font-weight: 600;
 }
 
 @keyframes jump {
@@ -870,6 +951,74 @@ input:checked + .header__theme-slider:before {
   color: var(--black);
 }
 
+.football-backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.football-transform {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.football-modal {
+  border-radius: 20px;
+  background: var(--white);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1.2);
+  transition: transform 500ms ease-in-out;
+  width: 576px;
+  background-image: url("../../img/game-development.png"), url("../../img/puzzle.png"), url("../../img/sword.png"), url("../../img/tic-tac-toe.png");
+  background-repeat: no-repeat;
+  background-position: top 50px right 41px, top 30px left 50px, top 100px left 110px, top 100px right 100px;
+  background-size: 30px;
+}
+.football-modal__close {
+  margin-left: auto;
+  background-color: transparent;
+}
+.football-modal__svg {
+  width: 15px;
+  height: 15px;
+}
+.football-modal__text {
+  color: var(--black);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  max-width: 392px;
+  margin-bottom: 42px;
+}
+.football-modal__submit {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.football-modal-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .three-numbers {
   font-family: "Montserrat Alternates";
 }
@@ -1034,6 +1183,9 @@ input:checked + .header__theme-slider:before {
 .choose-scientist__img-box {
   position: relative;
   border-radius: 20px;
+  opacity: 1;
+  transform: scale(1);
+  transition-duration: 300ms;
 }
 .choose-scientist__img-image {
   border-radius: 20px;
@@ -1096,7 +1248,7 @@ input:checked + .header__theme-slider:before {
 }
 
 .box-hidden {
-  display: none;
+  opacity: 0;
 }
 
 .footer {
@@ -1301,7 +1453,7 @@ input:checked + .header__theme-slider:before {
   transform: scale(1.1);
   transition: transform 200ms ease-in-out;
   width: 576px;
-  background-image: url("../../img/game-development.png"), url("../../img/puzzle.png"), url("../../img/sword.png"), url("../../img/tic-tac-toe.png");
+  background-image: url("././img/game-development.png"), url("././img/puzzle.png"), url("././img/sword.png"), url("././img/tic-tac-toe.png");
   background-repeat: no-repeat;
   background-position: top 154px right 41px, top 230px left 85px, top 154px left 41px, top 230px right 85px;
   background-size: 30px;
@@ -1338,6 +1490,11 @@ input:checked + .header__theme-slider:before {
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 28px;
+}
+.hi-modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hi-modal__submit {
   padding: 10px 20px;
