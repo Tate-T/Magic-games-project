@@ -36,6 +36,10 @@
   &__img-box {
     position: relative;
     border-radius: 20px;
+    opacity: 1;
+
+    transform: scale(1);
+    transition-duration: 300ms;
   }
   &__img-image {
     border-radius: 20px;
@@ -99,5 +103,5 @@
   }
 }
 .box-hidden {
-  display: none;
+  opacity: 0;
 }
