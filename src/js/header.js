@@ -13,6 +13,15 @@ const themeBtn = document.querySelector("#theme-checkbox");
 modeBtn.addEventListener("click", () =>{
     modeArrow.classList.toggle("reverse-arrow");
     modeList.classList.toggle("hidden-mode-list");
+    for (let i = 0; i < numModeEL.length; i++){
+        numModeEL[i].style = "display: block";
+    }
+    for (let i = 0; i < introModeEl.length; i++){
+        introModeEl[i].style = "display: block";
+    }
+    for (let i = 0; i < gameModeEl.length; i++){
+        gameModeEl[i].style = "display: block";
+    }
 })
 
 numMode.addEventListener("click", () =>{
@@ -25,6 +34,7 @@ numMode.addEventListener("click", () =>{
     for (let i = 0; i < gameModeEl.length; i++){
         gameModeEl[i].style = "display: none";
     }
+    modeList.classList.toggle("hidden-mode-list");
 })
 introMode.addEventListener("click", () =>{
     for (let i = 0; i < numModeEL.length; i++){
@@ -36,6 +46,7 @@ introMode.addEventListener("click", () =>{
     for (let i = 0; i < gameModeEl.length; i++){
         gameModeEl[i].style = "display: none";
     }
+    modeList.classList.toggle("hidden-mode-list");
 })
 gameMode.addEventListener("click", () =>{
     for (let i = 0; i < numModeEL.length; i++){
@@ -47,6 +58,7 @@ gameMode.addEventListener("click", () =>{
     for (let i = 0; i < gameModeEl.length; i++){
         gameModeEl[i].style = "display: block";
     }
+    modeList.classList.toggle("hidden-mode-list");
 })
 
 let theme = 0;
