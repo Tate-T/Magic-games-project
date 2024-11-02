@@ -35,6 +35,7 @@ numMode.addEventListener("click", () =>{
         gameModeEl[i].style = "display: none";
     }
     modeList.classList.toggle("hidden-mode-list");
+    modeArrow.classList.toggle("reverse-arrow");
 })
 introMode.addEventListener("click", () =>{
     for (let i = 0; i < numModeEL.length; i++){
@@ -47,6 +48,7 @@ introMode.addEventListener("click", () =>{
         gameModeEl[i].style = "display: none";
     }
     modeList.classList.toggle("hidden-mode-list");
+    modeArrow.classList.toggle("reverse-arrow");
 })
 gameMode.addEventListener("click", () =>{
     for (let i = 0; i < numModeEL.length; i++){
@@ -59,6 +61,7 @@ gameMode.addEventListener("click", () =>{
         gameModeEl[i].style = "display: block";
     }
     modeList.classList.toggle("hidden-mode-list");
+    modeArrow.classList.toggle("reverse-arrow");
 })
 
 let theme = 0;
