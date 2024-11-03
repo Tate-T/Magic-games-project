@@ -9,6 +9,7 @@ const introModeEl = document.querySelectorAll(".acquaintance");
 const numModeEL = document.querySelectorAll(".numerical");
 const gameModeEl = document.querySelectorAll(".game");
 const themeBtn = document.querySelector("#theme-checkbox");
+const main = document.querySelector(".main")
 
 modeBtn.addEventListener("click", () =>{
     modeArrow.classList.toggle("reverse-arrow");
@@ -65,16 +66,18 @@ gameMode.addEventListener("click", () =>{
 })
 
 let theme = 0;
-themeBtn.addEventListener("click", ()=>{
-    if(theme == 0){
+themeBtn.addEventListener("click", () => {
+    if (theme == 0) {
         document.documentElement.style.setProperty('--black', '#fff');
         document.documentElement.style.setProperty('--white', 'rgb(28, 28, 28)');
+        body.style.backgroundColor = 'rgb(55,55,55)'; 
+        main.style.backgroundColor = 'rgb(55,55,55)'; 
         theme = 1;
-    }
-    else{
+    } else {
         document.documentElement.style.setProperty('--black', '#000');
         document.documentElement.style.setProperty('--white', '#fff');
+        body.style.backgroundColor = ''; 
+        main.style.backgroundColor = ''; 
         theme = 0;
     }
-    
-})
+});
